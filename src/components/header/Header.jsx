@@ -3,6 +3,8 @@ import React from 'react'
 import styled from 'styled-components'
 /* ------------------------------- FORMATEDJS ------------------------------- */
 import { FormattedMessage } from 'react-intl'
+/* ------------------------------- COMPONENTS ------------------------------- */
+import Card from './Card'
 
 const Header = () => {
   return (
@@ -23,7 +25,7 @@ const Header = () => {
                     <FormattedMessage id='header.text4' defaultMessage={"I love Technology, Creativity and building things for the web"} />
                 </h2>
             </div>
-            <div className="card"></div>
+            <Card/>
         </div>
         <div className="bgEffect"></div>
         <div className="bgEffect"></div>
@@ -141,16 +143,10 @@ const Container = styled.section`
             margin-bottom: 2rem;
         }
 
-        .card{
-            width: 100%;
-            height: 300px;
-            background-color: ${props => props.theme.bg_3};
-            border-radius: 10px;
-        }
-
         @media (min-width: 768px) {
             flex-direction: row;
             justify-content: space-between;
+            padding: 200px 0;
 
             .body{
                 p{
@@ -166,10 +162,6 @@ const Container = styled.section`
                 }
             }
 
-            .card{
-                width: 285px;
-                height: 375px;
-            }
         }
     }
 

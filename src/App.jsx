@@ -32,7 +32,7 @@ const Container = styled.div`
   header{
     height: 50px;
     @media (min-width: 768px) {
-      height: 70px;
+      height: 69px;
     }
   }
   
