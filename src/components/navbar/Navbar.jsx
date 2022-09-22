@@ -250,6 +250,7 @@ const Nav = styled.nav`
         background-color: transparent;
         top: 0;
         width: auto;
+        height: auto;
         ul{
             flex-direction: row;
 
