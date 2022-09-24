@@ -13,7 +13,7 @@ const Navbar = ({state, handleChangeStateFalse, handleChangeState}) => {
             <Nav className={state && 'active'}>
                 <ul>
                     <li>
-                        <a href="#!" onClick={() => handleChangeStateFalse()}>
+                        <a href="#about" onClick={() => handleChangeStateFalse()}>
                             <FormattedMessage 
                                 id='menu.about' 
                                 defaultMessage={'About'}
@@ -21,7 +21,7 @@ const Navbar = ({state, handleChangeStateFalse, handleChangeState}) => {
                         </a>
                     </li>
                     <li>
-                        <a href="#!" onClick={() => handleChangeStateFalse()}>
+                        <a href="#skills" onClick={() => handleChangeStateFalse()}>
                             <FormattedMessage 
                                 id='menu.skills' 
                                 defaultMessage={'My Skills'}
@@ -29,7 +29,7 @@ const Navbar = ({state, handleChangeStateFalse, handleChangeState}) => {
                         </a>
                     </li>
                     <li>
-                        <a href="#!" onClick={() => handleChangeStateFalse()}>
+                        <a href="#services" onClick={() => handleChangeStateFalse()}>
                             <FormattedMessage 
                                 id='menu.services' 
                                 defaultMessage={'Services'}
@@ -37,7 +37,7 @@ const Navbar = ({state, handleChangeStateFalse, handleChangeState}) => {
                         </a>
                     </li>
                     <li>
-                        <a href="#!" onClick={() => handleChangeStateFalse()}>
+                        <a href="#work" onClick={() => handleChangeStateFalse()}>
                             <FormattedMessage 
                                 id='menu.work' 
                                 defaultMessage={'Work'}
@@ -45,7 +45,7 @@ const Navbar = ({state, handleChangeStateFalse, handleChangeState}) => {
                         </a>
                     </li>
                     <li>
-                        <a href="#!" onClick={() => handleChangeStateFalse()}>
+                        <a href="#contact" onClick={() => handleChangeStateFalse()}>
                             <FormattedMessage 
                                 id='menu.contact' 
                                 defaultMessage={'Contact'}

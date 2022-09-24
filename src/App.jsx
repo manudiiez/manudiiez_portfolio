@@ -6,6 +6,7 @@ import { GlobalStyles } from "./theme/theme";
 /* ------------------------------- COMPONENTS ------------------------------- */
 import NavbarContainer from "./components/navbar/NavbarContainer";
 import Home from "./components/home/Home";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Home/>
       </main>
       <footer>
-
+        <Footer/>
       </footer>
     </Container>
   );

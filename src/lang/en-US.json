@@ -7,5 +7,9 @@
     "header.text1": "Hi my name is",
     "header.text2": "Manuel Diez.",
     "header.text3": "I'm a full Stack developer",
-    "header.text4": "I love Technology, Creativity and building things for the web "
+    "header.text4": "I love Technology, Creativity and building things for the web ",
+    "about.text1": "About Me",
+    "about.text2": "Hello! My name is Manuel and I enjoy creating things that live on the internet. I have a serious passion for UI effect, animations and creating beautiful design.",
+    "about.text3": "My interest in web development started back in 2020 when I decided to do a web page for one of my school projects. After that I started learning every day to get my best version.",
+    "about.text4": "Interested in the entire frontend spectrum and in working on ambitious projects with positive people."
 }
