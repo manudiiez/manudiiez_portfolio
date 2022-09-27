@@ -134,5 +134,41 @@ const Container = styled.div`
         }   
     }
 
+    @media (min-width: 768px) {
+        .container{
+            padding: 200px 0;
+
+            .title{
+                h5{
+                    font-size: 3rem;
+                }
+            }
+            .body{
+                h6{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+
+                ul{
+                    li{
+                        a{
+                            svg{
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        .button{
+            button{
+                width: 50%;
+            }
+        }
+    }
+
 
 `
