@@ -12,38 +12,36 @@ const Footer = () => {
   return (
     <Container>
         <div className="container-lg container">
-
-            <div className="container__media">
-                <div className="content">
-                    <ul>
-                        <li>
-                            <a href="#!">
-                                <FontAwesomeIcon icon={faLinkedinIn} />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!">
-                                <FontAwesomeIcon icon={faInstagram} />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#!">
-                                <FontAwesomeIcon icon={faGithub} />
-                            </a>
-                        </li>
-                        
-                        
-                    </ul>
-                </div>
-                <div className='line'></div>
+            <div className='title'>
+                <div></div>
+                <h5>Contact</h5>
+                <div></div>
             </div>
-            <div className="container__email">
-                <div className="content">
-                    <div>
-                        <a href="#!">manudiiez123@gmail.com</a>
-                    </div>
-                </div>
-                <div className='line'></div>
+            <div className='body'>
+                <h6>I'm looking for new opportunities.</h6>
+                <p>manudiiez123@gmail.com</p>
+                <ul>
+                    <li>
+                        <a href="#!">
+                            <FontAwesomeIcon icon={faLinkedinIn}/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <FontAwesomeIcon icon={faInstagram}/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <FontAwesomeIcon icon={faGithub}/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div className='button'>
+                <button>
+                    Use my bot
+                </button>
             </div>
         </div>
 
@@ -61,68 +59,79 @@ const Container = styled.div`
         padding: 100px 0;
         width: 100%;
 
-        .line{
-            height: 100px;
-            width: 2px;
-            background-color: ${props => props.theme.color_2};
-        }
-        .container__media{
-            position: fixed;
-            bottom: 0;
-            left: 5rem;
+        .title{
             display: flex;
-            justify-content: center;
+            justify-content: center; 
             align-items: center;
-            flex-direction: column;
+            h5{
+                font-size: 2rem;
+                color: ${props => props.theme.color_1};
+                padding: 0 1rem;
+                font-weight: normal;
+                margin: 0;
+            }
+            div{
+                width: 100%;
+                height: 1px;
+                background-color: ${props => props.theme.color_1};
+            }
+        }
 
-            .content{
-                ul{
-                    margin: 0;
-                    padding: 0;
-                    list-style: none;
-                    li{
-                        a{
-                            svg{
-                                font-size: 1.5rem;  
-                                color: ${props => props.theme.color_2};
-
-                            }
-                        }
-                        margin-bottom: 2rem;
-                    }
-                }
+        .body{
+            h6{
+                margin: 0;
+                margin-top: 3rem;
+                font-size: 1.3rem;
+                font-weight: normal;
+                color: ${props => props.theme.color_1};
+                text-align: center;
             }
 
-        }
+            p{
+                font-weight: normal;
+                color: ${props => props.theme.color_2};
+                text-align: center;
+                font-size: 0.8rem;
+                margin-top: 2rem;
+            }
 
-        .container__email{
-            position: fixed;
-            bottom: 0;
-            right: 5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            .content{
-                height: 233px;
-
-                div{
-                    position: relative;
-                    width: 100px;
-                    height: 100%;
-                    background-color: red;
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    margin: 0 1rem;
+                    margin-top: 2rem;
                     a{
-                        position: absolute;
-                        color: ${props => props.theme.color_2};
-                        text-decoration: none;
-                        top: 0;
-                        left: -100%;
+                        svg{
+                            font-size: 1.3rem;
+                            color: ${props => props.theme.color_1};
+
+                        }
                     }
                 }
-                margin-bottom: 2rem;
-                transform: rotate(90deg);
             }
         }
+
+        .button{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            button{
+                color: ${props => props.theme.color_1};
+                background-color: ${props => props.theme.bg_3};
+                border: none;
+                width: 70%;
+                margin-top: 2rem;
+                height: 40px;
+                border-radius: 10px;
+                font-size: 1.3rem;
+                font-weight: normal;
+            }
+        }   
     }
 
 
